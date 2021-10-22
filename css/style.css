@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Italianno&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;  
+  box-sizing: border-box;
+  outline: none;
+  font-family: "PT Serif", sans-serif;
+}
+
+:root{
+  --green: #3CA1FF;
+  --pink: #e91e68;
+  --yellow: #E6C058;
+  
+}
+
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  width: 100%;
+  height: 500px;
+  background: var(--green);
+}
+
+.content {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 30px;
+  font-family: "Dancing Script", arial, helvetica, sans-serif;
+  color: var(--pink);
+  padding: 250px;
+  cursor: grab;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  padding: 1000px;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav ul li a{
+  color: var(--pink);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav ul li a:hover{
+
+  color: #e65dbde1;
+}
+
+nav ul button{
+  border: 1px solid var(--pink);
+  background: transparent;
+  padding: 5px 25px;
+  cursor: pointer;
+  margin-left: 30px;
+  color: var(--pink);
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+nav ul button:hover{
+  transition: background, color 0.05s;
+  background-color: var(--pink);
+  color: white;
+}
+
+ .header-block {
+  max-width: 1000px;
+  min-width: 300px;
+  height: 400px;
+  background-color: var(--pink);
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  margin-top : 30px;
+  left: 250px;
+  z-index: 10;
+  padding: 100px 600px;
+ }
+
+ .header-block img {
+  width: 30%;
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+ }
+
+ .header-block .text {
+   position: absolute;
+   bottom: 30%;
+   left: 10%;
+   font-size: 30px;
+ }
+ .header-block .text h2{
+   color: var(--green);
+   margin-bottom: 30px;
+   text-align: left;
+   font-size: 70px;
+   transform: translateX(-20px);
+   transition: transform 0.5s;
+ }
+
+ .header-block .text p{
+   max-width: 280px;
+   color: white;
+   position: relative;
+   transform: translateX(-20px);
+   transition: transform 0.4 
+ }
+
+ section .catalog{
+  width: 100vw;
+  padding: 100px;
+
+ }
+ 
+  section .search-card {
+  width: 1000px;
+  height: 150px;
+  background: var(--yellow);
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+.search-input{
+  width: 700px;
+  height: 50px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  text-indent: 10px;
+}
+.search-button{
+  width: 150px;
+  height: 50px;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background: var(--green);
+  color: white;
+  transition: 0.2s ease;
+  font-size: 20px;
+}
+
+.search-button:hover{
+  cursor: grab;
+  background: grey;
+  color:var(--yellow);
+}
+
+.title-wrapper-catalog{
+  margin-top: 200px;
+  padding-bottom:20px;
+}
+
+section .card-wrapper{
+  max-width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px,  1fr));
+  grid-gap: 30px;
+  padding-top: 55px;
+}
+
+section .card-item{
+  height: 400px;
+  background: var(--yellow);
+  border-radius: 8px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ .card-content{
+   height: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ .card-item img {
+   width: 200px;
+   height: 300px;
+ }
+
+ .card-item h3{
+   width: 100%;
+ }
+
+ .card-item p{
+   width: 100%;
+   font-style: italic;
+   color: #00000070;
+}
+
+.card-item button{
+  width: 100%;
+  height: 40px;
+  padding: 8px 0px;
+  border: none;
+  background: var(--pink);
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.card-item button:hover{
+  background: var(--green);
+  color:white;
+}
+

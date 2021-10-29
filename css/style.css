@@ -144,7 +144,6 @@ nav ul button:hover{
  section .catalog{
   width: 100vw;
   padding: 100px;
-
  }
  
   section .search-card {
@@ -251,3 +250,192 @@ section .card-item{
   color:white;
 }
 
+.buscar{
+  width: 100%;
+  right:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+}
+
+.buscar-content{
+  max-width:1000px;
+  min-width: 300px;
+  height: 600px;
+  background: #e2e3e4;
+  margin: 0 auto;
+  border-radius:8px;
+  z-index: 10;
+  padding:10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.left{
+  width:25%;
+  min-width: 300px;
+  height:100%;
+  background: #c7c6c6;
+  border-radius:8px;
+}
+
+.left img{
+  padding-left: 10px;
+  padding-top: 15px;
+  width:290px;
+  height: 570px;
+}
+
+.right{
+  width:65%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top:10%;
+}
+
+.right h3{
+  text-align: right;
+  width:90%;
+  margin-bottom:20px;
+}
+
+.right p{
+  width: 90%;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-align: right;
+  color: #a19f9f;
+
+}
+
+.figuras{
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.title-wrapper-figuras{
+  padding: 20px 0px;
+}
+
+.figuras-card-bloco{
+  max-width: 1000px;
+  min-width: 300px;
+  height: 200px;
+  background: white;
+  margin: 0 auto;
+  border-radius:8px;
+  z-index: 10;  /*não ficar abaixo de nada */
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  grid-gap: 10px; /*distancia entre os cards*/
+
+}
+
+.figuras-card-item{
+  max-width: 420px;
+  width: 300px;
+  height:150px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #464444;
+  border-radius: 4px;
+}
+
+.figuras-text-content{
+  max-width: 60%;
+  margin: 5px;
+
+}
+
+.figuras-card-item img{
+  width: 64px;
+  height: 64px;
+
+}
+
+footer{
+  width: 100%;
+  height: 250px;
+
+}
+
+footer .main {
+  width: 100%;
+  height: 200px;
+  background: var(--yellow);
+  padding: 20px 10px;
+}
+
+.footer-links {
+  max-width: 1000px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.footer-company, .footer-rental, .footer-social{
+    color: white;
+    height:100%;
+    min-height: 100px;
+}
+
+.footer-links h4{
+  margin-bottom: 10px;
+}
+
+.footer-links h6{
+  margin-bottom: 8px;
+}
+
+.main .footer-social img{
+  width: 32px;
+  height: 32px;
+
+}
+
+@media (max-width: 576px){
+  nav ul li{
+    display: none;
+  }
+
+.header-block{
+  width: 70%;
+  position: absolute;
+  right: 16%;
+  top: 30%;
+}
+
+.header-block .text{
+  position: absolute;
+  bottom: 10%;
+  left: 15;
+}
+.section filter-card{
+  width: 390px;
+  padding: 0px 10px;
+}
+
+
+.search-input{
+  max-width: 700px;
+  min-width: 240px;
+}
+}
